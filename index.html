@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--The <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag ensures that the website is responsive and displays correctly on devices with different screen sizes, such as smartphones, tablets, and desktops. Here's what it does:-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="mydescription" content="portfolio">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshika Trivedi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <h1>Anshika Trivedi</h1>
-    <p>Full Stack web developer</p>
-    </header>
-    <!--sections are nothing but standard format,on tag is used to divide a web page into sections of related content, which can improve the readability and accessibility of the document-->
-    <section>
-        <h2>About me</h2>
-        <p>hii hiii hiiiiiii,a passionate full stack with over a year of experience in creating a responsive and user friendly web applications</p>
+  <header>
+    <h1 class="fade-in">Anshika Trivedi</h1>
+    <p class="fade-in">Aspiring Software Developer | MCA Student</p>
+  </header>
 
-    </section>
-    <section>
-        <h2>project</h2>
-        <div>
-            <div>
-            <h3>Airbnb</h3>
-                <p>responsive and feature rich web application of Airbnb,focusing on user friendly design and scalability</p>
-                <a href="#"> viewproject </a>
-        </div>
-        <div>
-            <h3>iphone Theme website</h3>
-                <p>An elegant website with an iPhone-inspired theme, showcasing modern design principles.</p>
-                <a href="https://iphone-website-priyansh.vercel.app/"> viewproject </a>
-        </div></div>
-    </section>
-    <section>
-        <h2>Contact me </h2>
-        <p>Feel free to reach out for collaborations or freelance opportunities:</p>
-        <ul>
-            <li>Email :<a href="mailto:anshikatrivedi114@gmail.com"> anshikatrivedi114@gmail.com </a> </li>
-            <li>Linkdin :<a href="https://www.linkedin.com/in/anshika-trivedi-21a608288/"> Linkdin </a> </li>
-            <li>Github :<a href="https://github.com/AnshikaTrivedi1"> Github </a> </li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Anshika Trivedi. All Rights Reserved.</p>
-    </footer>
+  <section id="about" class="slide-in">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring MCA student at VIT Bhopal with a strong foundation in software development.
+      Passionate about problem-solving and currently enhancing my skills in Java, DSA, and full-stack development.
+    </p>
+  </section>
+
+  <section id="projects" class="slide-in">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Sorting Visualizer (Dec 2022)</strong><br>
+        A platform for comparing different sorting algorithms based on time and space complexity using graphs and pie charts.
+      </li>
+      <li>
+        <strong>Congestion Control using MATLAB (Nov 2024 - Mar 2025)</strong><br>
+        Researched and implemented congestion control strategies to improve data flow efficiency in networks.
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" class="slide-in">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, HTML, CSS, Java, JavaScript</li>
+      <li>Database: MySQL</li>
+      <li>Libraries: Pandas, NumPy</li>
+      <li>Tools: Git, VS Code, GitHub, Google Colab, Jupyter</li>
+      <li>Coursework: DBMS, OS, DSA, Probability, Statistics, Cryptography, Discrete Math</li>
+    </ul>
+  </section>
+
+  <section id="education" class="slide-in">
+    <h2>Education</h2>
+    <p><strong>Master of Computer Applications</strong> - VIT Bhopal (Jul 2024 - Jun 2026) | CGPA: 8.5/10</p>
+    <p><strong>Bachelor of Computer Applications</strong> - IPS Academy, Indore (Aug 2019 - Jul 2022) | CGPA: 8.5/10</p>
+  </section>
+
+  <section id="contact" class="slide-in">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+      <p id="formResponse"></p>
+    </form>
+    <p>Email: <a href="mailto:anshikatrivedi114@gmail.com">anshikatrivedi114@gmail.com</a></p>
+    <p>Phone: 8717937189</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
